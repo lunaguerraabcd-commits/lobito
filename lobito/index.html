@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para ti 💖</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .carta {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #ff4d6d;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #ff4d6d;
+            color: white;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e63950;
+        }
+
+        #mensaje {
+            display: none;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carta">
+    <h1>Hola, amor 💕</h1>
+    <p>Hice esto solo para ti</p>
+    <button onclick="mostrarMensaje()">Ábreme</button>
+    <p id="mensaje">
+        Te quiero con el alma,  
+        por que el alma nunca muere,
+        y mi amor por ti es eterno 💖
+    </p>
+</div>
+
+<script>
+    function mostrarMensaje() {
+        document.getElementById("mensaje").style.display = "block";
+    }
+</script>
+</script>
+
+<!-- AQUÍ PEGAS LOS CORAZONES -->
+<style>
+  .corazon {
+    position: fixed;
+    bottom: -20px;
+    font-size: 24px;
+    animation: flotar 5s linear forwards;
+  }
+
+  @keyframes flotar {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-600px);
+      opacity: 0;
+    }
+  }
+</style>
+</script>
+
+<!-- AQUÍ PEGAS LOS CORAZONES -->
+<style>
+  .corazon {
+    position: fixed;
+    bottom: -20px;
+    font-size: 24px;
+    animation: flotar 5s linear forwards;
+  }
+
+  @keyframes flotar {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-600px);
+      opacity: 0;
+    }
+  }
+</style>
+
+<script>
+  function crearCorazon() {
+    const corazon = document.createElement("div");
+    corazon.classList.add("corazon");
+    corazon.innerText = "💖";
+    corazon.style.left = Math.random() * 100 + "vw";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(() => {
+      corazon.remove();
+    }, 5000);
+  }
+
+  setInterval(crearCorazon, 800);
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+
